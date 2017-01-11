@@ -13,6 +13,10 @@ open class FullScreenSlideshowViewController: UIViewController {
         let slideshow = ImageSlideshow()
         slideshow.zoomEnabled = true
         slideshow.contentScaleMode = UIViewContentMode.scaleAspectFit
+        
+        slideshow.pageControl.pageIndicatorTintColor = UIColor.white
+        slideshow.pageControl.currentPageIndicatorTintColor = UIColor.init(colorLiteralRed: 255.0/255.0, green: 115.0/255.0, blue: 116.0/255.0, alpha: 1.0)
+
         slideshow.pageControlPosition = PageControlPosition.insideScrollView
         // turns off the timer
         slideshow.slideshowInterval = 0
